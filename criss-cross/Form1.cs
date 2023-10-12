@@ -108,6 +108,13 @@ namespace criss_cross
         {
             Environment.Exit(0);
         }
+        private void обнулитьСчетToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            CountOWin.Text = "";
+            CountXWin.Text = "";
+            a = 0;
+            b = 0;
+        }
 
     }
 }

@@ -151,5 +151,10 @@ namespace criss_cross
             }
             return 0;
         }
+        private void новаяИграToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fillZeros();
+            turnx = true;
+        }
     }
 }

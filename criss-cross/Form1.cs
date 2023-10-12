@@ -104,58 +104,7 @@ namespace criss_cross
             }
             Checkwin();
         }
-        private void выходToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            Environment.Exit(0);
-        }
-        private void обнулитьСчетToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            CountOWin.Text = "";
-            CountXWin.Text = "";
-            a = 0;
-            b = 0;
-        }
-        private void выключитьЦветToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            foreach (var item in this.Controls)
-            {
-                if (item is Button)
-                {
-                    ((Button)item).ForeColor = Color.Black;
-                }
-            }
-        }
-        private void включитьЦветToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            foreach (var button in this.Controls.OfType<Button>())
-            {
-                if (getStateOfButton(button) == 1)
-                {
-                    button.ForeColor = Color.Blue;
-                }
-                else if (getStateOfButton(button) == 2)
-                {
-                    button.ForeColor = Color.Red;
-                }
-            }
-        }
-        private int getStateOfButton(Button button)
-        {
-            if (button.Text == "X")
-            {
-                return 1;
-            }
-            else if (button.Text == "O")
-            {
-                return 2;
-            }
-            return 0;
-        }
-        private void новаяИграToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            fillZeros();
-            turnx = true;
-        }
+        
 
     }
 }

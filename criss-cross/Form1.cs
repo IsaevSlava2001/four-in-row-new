@@ -115,6 +115,16 @@ namespace criss_cross
             a = 0;
             b = 0;
         }
+        private void выключитьЦветToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            foreach (var item in this.Controls)
+            {
+                if (item is Button)
+                {
+                    ((Button)item).ForeColor = Color.Black;
+                }
+            }
+        }
 
     }
 }

@@ -104,7 +104,10 @@ namespace criss_cross
             }
             Checkwin();
         }
-        
+        private void выходToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
 
     }
 }

@@ -125,6 +125,31 @@ namespace criss_cross
                 }
             }
         }
-
+        private void включитьЦветToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            foreach (var button in this.Controls.OfType<Button>())
+            {
+                if (getStateOfButton(button) == 1)
+                {
+                    button.ForeColor = Color.Blue;
+                }
+                else if (getStateOfButton(button) == 2)
+                {
+                    button.ForeColor = Color.Red;
+                }
+            }
+        }
+        private int getStateOfButton(Button button)
+        {
+            if (button.Text == "X")
+            {
+                return 1;
+            }
+            else if (button.Text == "O")
+            {
+                return 2;
+            }
+            return 0;
+        }
     }
 }
